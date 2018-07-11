@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "./index.js",
     "test": "mocha"
+  },
+  "bin": {
+    "fix-package-json": "./index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/incacola/cli-tutorial#readme",
   "dependencies": {
-    "execa": "0.10.0"
+    "execa": "0.10.0",
+    "listr": "0.14.1"
   }
 }
